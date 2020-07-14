@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InputDataViewController" customModule="MedDializ" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="wdF-6L-bDl" id="dN7-e1-3BJ"/>
+                <outlet property="continueButton" destination="3W6-TL-hzl" id="S4o-vl-yJx"/>
+                <outlet property="nextButton" destination="8p6-qk-yPT" id="QFp-cT-w6S"/>
+                <outlet property="repeatButton" destination="uL4-tK-W5Y" id="Pdt-1u-hgE"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="weightLabel" destination="Sgb-dS-Iac" id="0Ac-lR-a37"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пожалуйста положите пациента в кровать. Когда все будет готово, нажмите &quot;Дальше&quot;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2W-t2-tVX">
+                    <rect key="frame" x="20" y="94" width="374" height="41"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8p6-qk-yPT" customClass="RoundedButton" customModule="MedDializ" customModuleProvider="target">
+                    <rect key="frame" x="147" y="175" width="120" height="30"/>
+                    <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="JEZ-Of-r9U"/>
+                        <constraint firstAttribute="height" constant="30" id="ZeC-zC-QxJ"/>
+                    </constraints>
+                    <state key="normal" title="Дальше">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="nextButtonTapped:" destination="-1" eventType="touchUpInside" id="uuB-pw-FNp"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вес пациента" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sgb-dS-Iac">
+                    <rect key="frame" x="20" y="235" width="374" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uL4-tK-W5Y" customClass="RoundedButton" customModule="MedDializ" customModuleProvider="target">
+                    <rect key="frame" x="259" y="295.5" width="120" height="30"/>
+                    <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Повторить">
+                        <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                    </state>
+                    <connections>
+                        <action selector="nextButtonTapped:" destination="-1" eventType="touchUpInside" id="D44-Qb-10I"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3W6-TL-hzl" customClass="RoundedButton" customModule="MedDializ" customModuleProvider="target">
+                    <rect key="frame" x="35" y="295.5" width="120" height="30"/>
+                    <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Продолжить">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="continueButtonTapped:" destination="-1" eventType="touchUpInside" id="xu7-2x-GQT"/>
+                    </connections>
+                </button>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="wdF-6L-bDl">
+                    <rect key="frame" x="197" y="438" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="If3-yl-ehE"/>
+                        <constraint firstAttribute="width" constant="20" id="oF1-vL-DrO"/>
+                    </constraints>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="f2W-t2-tVX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="1sH-0m-efd"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="f2W-t2-tVX" secondAttribute="trailing" constant="20" id="ACm-J1-76k"/>
+                <constraint firstItem="wdF-6L-bDl" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="AhJ-0M-kIZ"/>
+                <constraint firstItem="3W6-TL-hzl" firstAttribute="width" secondItem="8p6-qk-yPT" secondAttribute="width" id="C0m-Co-Q5I"/>
+                <constraint firstItem="Sgb-dS-Iac" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="JCi-Lc-riR"/>
+                <constraint firstItem="wdF-6L-bDl" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="LSb-uQ-mJ0"/>
+                <constraint firstItem="Sgb-dS-Iac" firstAttribute="top" secondItem="8p6-qk-yPT" secondAttribute="bottom" constant="30" id="R28-Jd-5b3"/>
+                <constraint firstItem="3W6-TL-hzl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="35" id="Rcv-nk-x5R"/>
+                <constraint firstItem="uL4-tK-W5Y" firstAttribute="height" secondItem="8p6-qk-yPT" secondAttribute="height" id="U5n-bt-mTi"/>
+                <constraint firstItem="3W6-TL-hzl" firstAttribute="top" secondItem="Sgb-dS-Iac" secondAttribute="bottom" constant="40" id="b22-J3-Psj"/>
+                <constraint firstItem="8p6-qk-yPT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fJz-xd-CYA"/>
+                <constraint firstItem="3W6-TL-hzl" firstAttribute="height" secondItem="8p6-qk-yPT" secondAttribute="height" id="gUv-rI-6Ap"/>
+                <constraint firstItem="uL4-tK-W5Y" firstAttribute="width" secondItem="8p6-qk-yPT" secondAttribute="width" id="iDp-wg-wWV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Sgb-dS-Iac" secondAttribute="trailing" constant="20" id="jUU-9k-C3L"/>
+                <constraint firstItem="uL4-tK-W5Y" firstAttribute="top" secondItem="Sgb-dS-Iac" secondAttribute="bottom" constant="40" id="lYV-jw-DdT"/>
+                <constraint firstItem="8p6-qk-yPT" firstAttribute="top" secondItem="f2W-t2-tVX" secondAttribute="bottom" constant="40" id="mCq-0H-3B0"/>
+                <constraint firstItem="f2W-t2-tVX" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="srm-Pl-qxV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uL4-tK-W5Y" secondAttribute="trailing" constant="35" id="xsO-NS-6MH"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="450.72463768115944" y="103.79464285714285"/>
+        </view>
+    </objects>
+</document>

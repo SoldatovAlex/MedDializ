@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SplashViewController" customModule="MedDializ" customModuleProvider="target">
+            <connections>
+                <outlet property="thermometerView" destination="pdV-36-8zd" id="MTF-GW-ebB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MedDializ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zPO-Et-dM3">
+                    <rect key="frame" x="20" y="584" width="374" height="56"/>
+                    <fontDescription key="fontDescription" name="Kailasa-Bold" family="Kailasa" pointSize="43"/>
+                    <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pdV-36-8zd" customClass="ThermometerView" customModule="MedDializ" customModuleProvider="target">
+                    <rect key="frame" x="87" y="140" width="240" height="414"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="Kxy-Fq-c9i"/>
+                        <constraint firstAttribute="height" constant="414" id="iIa-3f-OyY"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="zPO-Et-dM3" firstAttribute="top" secondItem="pdV-36-8zd" secondAttribute="bottom" constant="30" id="Har-ge-Enw"/>
+                <constraint firstItem="pdV-36-8zd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="96" id="MI8-1a-kw3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zPO-Et-dM3" secondAttribute="trailing" constant="20" id="kzd-pP-DP6"/>
+                <constraint firstItem="zPO-Et-dM3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="le8-Bx-Gor"/>
+                <constraint firstItem="pdV-36-8zd" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="y4A-je-nSY"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="128.57142857142856"/>
+        </view>
+    </objects>
+</document>
